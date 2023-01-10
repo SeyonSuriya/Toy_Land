@@ -10,7 +10,7 @@
                     </div>
                     <p>Passion shouldn't cost a fortune. <br> On MiCROTECH, shop online for better deals on Electronic
                         products.</p>
-                    <a href="#"><img src="images/payment_icons.png" alt=""></a>
+                    <a href="#"><img src="image/payment_icons.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6">
