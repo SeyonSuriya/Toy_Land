@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include "db_conn.php";
 
 ?>
  <!-- Header -->
@@ -8,6 +9,9 @@ session_start();
             <!-- Topbar -->
             <div class="top-bar">
                 <div class="content-topbar flex-sb-m h-full container">
+                    <div class="left-top-bar">
+                        <?php echo "Island Wide Delivary" ?>
+                    </div>
     
                     <div class="right-top-bar flex-w h-full">
                     <?php if (isset($_SESSION['email']) && isset($_SESSION['fname'])
@@ -73,26 +77,30 @@ session_start();
     
                     <!-- Logo -->
                     <a href="#" class="logo">
-                        <img src="" alt="IMG-LOGO">
+                        <img src="images/logo.png" alt="IMG-LOGO">
                     </a>
                         
                     <!-- Menu -->
                     <div class="menu">
                         <ul class="main-menu">
-                            <li <?php if($page == 'home'){ echo 'class = "active"';} ?> >
+                            <li <?php //if($page == 'home'){ echo 'class = "active"';} ?> >
                                 <a href="index.php">Home</a>
                             </li>   
     
-                            <li <?php if($page == 'shop'){ echo 'class = "active"';} ?>>
+                            <li <?php //if($page == 'shop'){ echo 'class = "active"';} ?>>
                                 <a href="shopping_page.php">Shop</a>
                             </li>
     
-                            <li <?php if($page == 'about'){ echo 'class = "active"';} ?>>
-                                <a href="about.php">About Us</a>
+                            <li <?php //if($page == 'blog'){ echo 'class = "active"';} ?>>
+                                <a href="blog.php">Blog</a>
                             </li>
     
-                            <li <?php if($page == 'contact'){ echo 'class = "active"';} ?>>
-                                <a href="contact.php">Contact Us</a>
+                            <li <?php //if($page == 'about'){ echo 'class = "active"';} ?>>
+                                <a href="about.php">About</a>
+                            </li>
+    
+                            <li <?php //if($page == 'contact'){ echo 'class = "active"';} ?>>
+                                <a href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -105,7 +113,7 @@ session_start();
                         </div>
                         <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="2">
                             <a href="shopping_cart.php">
-                                <i class="zmdi zmdi-shopping-cart" <?php if($page == 'cart'){ echo 'id = "icon-active"';} ?>></i>
+                                <i class="zmdi zmdi-shopping-cart" <?php //if($page == 'cart'){ echo 'id = "icon-active"';} ?>></i>
                         </div>
     
                         <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
@@ -117,4 +125,5 @@ session_start();
             </div>
         </div>
     </header>
-    
+
+    <script src="script/app.js"></script>
