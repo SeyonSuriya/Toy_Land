@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'ElegantIcons';
-<<<<<<< HEAD
+
     src: url('../fonts/ElegantIcons/ElegantIcons.eot');
-    src: url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix') format('embedded-opentype'),
-=======
-    src:url('../fonts/ElegantIcons/ElegantIcons.eot');
-    src:url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix') format('embedded-opentype'),
->>>>>>> main
+    src: url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix'); format:('embedded-opentype');
+    src: url('../fonts/ElegantIcons/ElegantIcons.eot');
+    src:url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix'); format:('embedded-opentype'),
     url('../fonts/ElegantIcons/ElegantIcons.woff') format('woff'),
     url('../fonts/ElegantIcons/ElegantIcons.ttf') format('truetype'),
     url('../fonts/ElegantIcons/ElegantIcons.svg#ElegantIcons') format('svg');
@@ -31,8 +29,8 @@
 
 .footer_about .footer_logo a img {
     display: inline-block;
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 .footer_about p {
@@ -121,7 +119,6 @@
 
 .icon_mail_alt {
     font-family: 'ElegantIcons';
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
